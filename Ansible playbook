@@ -1,0 +1,14 @@
+---
+- name: Installing jenkins on slave1
+  hosts: slave1
+  become: true
+  tasks: 
+    - name: installing apache2 on slave1
+      apt: name=sudo apt-get install apache2 -y state=latest
+
+- name: Installing java on slave2
+  hosts: slave2
+  become: true
+  tasks: 
+    - name: installing nginx on slave2
+      apt: name=sudo apt-get install httpd -y state=latest
