@@ -4,11 +4,11 @@
   become: true
   tasks: 
     - name: installing apache2 on slave1
-      apt: name=sudo apt-get install apache2 -y state=latest
+      apt: name=apache2 state=latest
 
 - name: Installing java on slave2
   hosts: EPGC@SL2
   become: true
   tasks: 
     - name: installing nginx on slave2
-      apt: name=sudo apt-get install httpd -y state=latest
+      apt: name=nginx state=latest
