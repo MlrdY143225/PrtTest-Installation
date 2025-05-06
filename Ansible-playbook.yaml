@@ -7,7 +7,7 @@
       apt: name=apache2 state=latest
 
 - name: Installing java on slave2
-  hosts: k8s-slave2
+  hosts: k8s-slave2 
   become: true
   tasks: 
     - name: installing nginx on slave2
