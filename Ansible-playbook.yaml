@@ -1,6 +1,6 @@
 ---
 - name: Installing jenkins on slave1
-  hosts: k8s-slave1
+  hosts: k8s-slave1 
   become: true
   tasks: 
     - name: installing apache2 on slave1
